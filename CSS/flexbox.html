@@ -1,18 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
-    <link rel="stylesheet" href="flexbox.css">
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        border: 2px black solid;
+        height: 170px;
+        width: 170px;
+        padding: 2px;
+        margin: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      #container {
+        height: 800px;
+        width: 90%;
+        border: 2px dashed black;
+        padding: 10px;
+        margin: 10px auto;
+        background-color: lavender;
+
+        /* flexbox directions */
+        display: flex;
+        flex-direction: row;
+
+        /* justify-content  */
+        justify-content: center;
+
+        /* Flex wrap */
+        /* flex-wrap:wrap; */
+
+        /* align items */
+        align-items: center;
+
+        /* align content */
+        /* align-content:center; */
+      }
+      #box1 {
+        background-color: aqua;
+        order: 4;
+      }
+      #box2 {
+        background-color: blueviolet;
+        order: 3;
+      }
+      #box3 {
+        background-color: yellow;
+        /* align self */
+        /* align-self:flex-end; */
+
+        /* flex grow */
+        flex-grow: 1;
+      }
+
+      #box4 {
+        background-color: orange;
+        /* flex shrink */
+        /* flex-shrink: 10; */
+      }
+    </style>
+  </head>
+  <body>
     <h1>Flexbox</h1>
     <div id="container">
-        <div id="box1" class="box">1</div>
-        <div id="box2" class="box">2</div>
-        <div id="box3" class="box">3</div>
-        <div id="box4" class="box">4</div>
+      <div id="box1" class="box">1</div>
+      <div id="box2" class="box">2</div>
+      <div id="box3" class="box">3</div>
+      <div id="box4" class="box">4</div>
     </div>
-</body>
+  </body>
 </html>

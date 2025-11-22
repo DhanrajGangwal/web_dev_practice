@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            height: 125px;
+            width: 125px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: aquamarine;
+            position: relative;
+            /* animation */ 
+            animation-name: gummakkad;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+        }
+        @keyframes gummakkad {
+            from{ left: 10px;}
+            to{left:200px}
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <div class="box">Animation</div>
+</body>
+</html>
