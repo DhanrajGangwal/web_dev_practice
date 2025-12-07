@@ -26,4 +26,4 @@ function countvowel(str){
     console.log(`your entered string (${str}) have ${count} vowels`)
 }
 
-countvowel("dhanraj")
+countvowel(prompt("enter the string"))
