@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  section {
+    height: 100%;
+    flex-grow: 1;
+    background-color: #b4daaa;
+    border: 10px solid rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+  }
+}
+section:hover {
+  flex-grow: 2;
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+section:nth-child(1) {
+  background-image: url(https://i.pinimg.com/1200x/63/30/f1/6330f1500a51ac34fcf0b3e14ba1f30a.jpg);
+}
+section:nth-child(2) {
+  background-image: url(https://i.pinimg.com/736x/7b/96/5c/7b965c046f0b438cb19f04fddf7815a6.jpg);
+}
+section:nth-child(3) {
+  background-image: url(https://i.pinimg.com/1200x/23/32/b5/2332b50a3e96be70b24812f74aedd541.jpg);
+}
+section:nth-child(4) {
+  background-image: url(https://i.pinimg.com/1200x/18/00/c2/1800c230dceb37aa738441c3d807e2c8.jpg);
+}
+section:nth-child(5) {
+  background-image: url(https://i.pinimg.com/736x/a6/f2/25/a6f225b7b11f13d85b5d1dde4006f2db.jpg);
+}

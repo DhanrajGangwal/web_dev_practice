@@ -1,0 +1,15 @@
+//partials & imports
+@mixin button($bg-color,$color){
+    // height: 70px;
+    // width: 100px;
+    margin: 20px;
+    padding: 20px 30px;
+    background-color: $bg-color;
+    border: none;
+    border-radius:7px;
+    cursor: pointer;
+    color: $color;
+    outline :none;
+    font-size:18px;
+    ;
+}
