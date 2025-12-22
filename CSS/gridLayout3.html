@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      main {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10% 40% 25% 25%;
+        grid-template-areas:
+          "header header header"
+          "section section section"
+          "divleft bottomup divright"
+          "divleft bottomdown divright";
+        grid-gap: 5px;
+      }
+      header {
+        grid-area: header;
+        background-color: crimson;
+      }
+      section {
+        background-color: lightblue;
+        grid-area: section;
+      }
+      .divleft {
+        background-color: aqua;
+        grid-area: divleft;
+      }
+      .bottomup {
+        background-color: lightgreen;
+        grid-area: bottomup;
+      }
+      .bottomdown {
+        background-color: lightyellow;
+        grid-area: bottomdown;
+      }
+      .divright {
+        grid-area: divright;
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Grid layout 3</h1>
+      </header>
+      <section></section>
+      <div class="divleft">left</div>
+      <div class="bottomup"></div>
+      <div class="bottomdown"></div>
+      <div class="divright"></div>
+    </main>
+  </body>
+</html>

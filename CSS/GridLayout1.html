@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas:
+    "header header header"
+    "section section section"
+    "div1 div2 div3";
+    grid-gap: 10px;
+    padding:10px 0px;
+}
+
+header {
+  background-color: #df7070;
+  grid-area: header;
+}
+
+section {
+  background-color: crimson;
+  grid-area: section;
+}
+
+#div1 {
+  background-color: darkturquoise;
+  grid-area: div1;
+}
+
+#div2 {
+  background-color: dodgerblue;
+  grid-area: div2;
+}
+
+#div3 {
+  background-color: seagreen;
+  grid-area: div3;
+}
+</style>
+</head>
+
+<body>
+<main>
+  <header>Header</header>
+  <section>Section</section>
+  <div id="div1">Div 1</div>
+  <div id="div2">Div 2</div>
+  <div id="div3">Div 3</div>
+</main>
+</body>
+</html>

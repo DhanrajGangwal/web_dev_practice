@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout 2</title>
+    <style>
+        body,html{
+            height: 100%;
+        }
+        main{
+            height: 100%;
+            display: grid;
+            grid-template-columns: 470px 1fr;
+            grid-template-rows: 10% 50% 40%;
+            grid-template-areas: "header header"
+                                 "section1 section2"
+                                 "div div";
+                                 grid-gap: 5px;
+        }
+        header{
+            background-color: crimson;
+            grid-area: header;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+        }
+        #section1{
+            border-radius: 20px;
+            background-color: aqua;
+            grid-area: section1;
+        }
+        #section2{
+            border-radius: 20px;
+            grid-area: section2;
+            background-color: lightblue;
+        }
+        div{
+            grid-area: div;
+            background-color: lightskyblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header><h1>Grid Layout 2</h1></header>
+        <section id="section1">section1</section>
+        <section id="section2">section 2</section>
+        <div>Div</div>
+    </main>
+</body>
+</html>
