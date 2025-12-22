@@ -1,63 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid layout 4(bentogrid)</title>
     <style>
-        *{
-            margin: 0;padding: 0;
-        }
-        body,html{
-            height: 100%;
-            width: 100%;
-        }
-        main{
-            height: 100%;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 10% 70% 20%;
-            grid-template-rows: 30% 70%;
-            grid-template-areas: "left header right-top"
-                                  "left left-bottom right-bottom"
-                                  "left left-bottom right-bottom";
-                                  grid-gap: 5px;
-                                  border-radius: 2px;
-                                  border: 2px solid dashed;
-        }
-        header{
-            background-color: mediumaquamarine;
-            grid-area: header;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-        }
-        .right-top{
-            background-color: darkturquoise;
-            grid-area: right-top;
-        }
-        .left{
-            background-color: crimson;
-            grid-area: left;
-
-        }
-        .left-bottom{
-            background-color: lightblue;
-            grid-area: left-bottom;
-        }
-        .right-bottom{
-            background-color: dodgerblue;
-            grid-area: right-bottom;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      main {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 70% 20%;
+        grid-template-rows: 30% 35% 35%;
+        grid-template-areas:
+          "left header right-top"
+          "left left-bottom right-bottom"
+          "left left-bottom right-bottom";
+        grid-gap: 5px;
+      }
+      header {
+        height: 100%;
+        width: 100%;
+        background-color: mediumaquamarine;
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://plus.unsplash.com/premium_photo-1764546983177-c2342bef9ebf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMHx8fGVufDB8fHx8fA==);
+        background-size: cover;
+        background-position: center;
+        color: white;
+      }
+      .right-top {
+        background-color: darkturquoise;
+        grid-area: right-top;
+        overflow: hidden;
+      }
+      .right-top img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .left {
+        background-color: crimson;
+        grid-area: left;
+      }
+      .left-bottom {
+        background-color: lightblue;
+        grid-area: left-bottom;
+      }
+      .right-bottom {
+        background-color: dodgerblue;
+        grid-area: right-bottom;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <header><h1>Bento Grid</h1></header>
-        <div class="right-top"></div>
-        <aside class="left"></aside>
-        <div class="left-bottom"></div>
-        <div class="right-bottom"></div>
+      <header><h1>Bento Grid</h1></header>
+      <div class="right-top">
+        <img
+          src="https://images.unsplash.com/photo-1761839257647-df30867afd54?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+          alt="gallery image"
+        />
+      </div>
+      <aside class="left"></aside>
+      <div class="left-bottom"></div>
+      <div class="right-bottom"></div>
     </main>
-</body>
+  </body>
 </html>
