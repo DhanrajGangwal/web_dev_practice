@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout 4(bentogrid)</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+        }
+        main{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 10% 70% 20%;
+            grid-template-rows: 30% 70%;
+            grid-template-areas: "left header right-top"
+                                  "left left-bottom right-bottom"
+                                  "left left-bottom right-bottom";
+                                  grid-gap: 5px;
+                                  border-radius: 2px;
+                                  border: 2px solid dashed;
+        }
+        header{
+            background-color: mediumaquamarine;
+            grid-area: header;
+        }
+        .right-top{
+            background-color: darkturquoise;
+            grid-area: right-top;
+        }
+        .left{
+            background-color: crimson;
+            grid-area: left;
+
+        }
+        .left-bottom{
+            background-color: lightblue;
+            grid-area: left-bottom;
+        }
+        .right-bottom{
+            background-color: dodgerblue;
+            grid-area: right-bottom;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header><h1>Bento Grid</h1></header>
+        <div class="right-top"></div>
+        <aside class="left"></aside>
+        <div class="left-bottom"></div>
+        <div class="right-bottom"></div>
+    </main>
+</body>
+</html>
