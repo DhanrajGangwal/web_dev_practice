@@ -34,8 +34,7 @@ let team = [
 ]
 
 btn.addEventListener('click',()=>{
-    let winner = team[Math.floor(Math.random()*team.length)]
-    // var winner = arr[Math.floor(Math.random()*arr.length)]
+    let winner = team[Math.floor(Math.random()*team.length)];
     let c1 = Math.floor(Math.random())*256
     let c2 = Math.floor(Math.random())*256
     let c3 = Math.floor(Math.random())*256
