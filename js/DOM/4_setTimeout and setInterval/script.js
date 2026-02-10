@@ -11,8 +11,8 @@ btn.addEventListener('click',()=>{
             h1.innerHTML = "dowload complete"
         }
 
-    }, 100);
+    }, 50);
     setTimeout(() => {
         clearInterval(time);
-    }, 10000); 
+    }, 5000); 
 });
