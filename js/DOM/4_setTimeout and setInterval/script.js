@@ -7,12 +7,12 @@ btn.addEventListener('click',()=>{
         grow++;
         bar.style.width = grow + '%';
         h1.innerHTML = `${grow}%`;
-        if(grow === 100){
-            h1.innerHTML = "dowload complete"
-        }
 
     }, 50);
     setTimeout(() => {
         clearInterval(time);
+        h1.innerHTML = "dowload complete";
+        btn.style.pointerEvents = 'none'
+        btn.style.opacity = '0.5';
     }, 5000); 
 });
