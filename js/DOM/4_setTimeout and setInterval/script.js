@@ -3,6 +3,7 @@ var btn = document.querySelector('button');
 let h1 = document.querySelector('h1');
 var grow = 0;
 btn.addEventListener('click',()=>{
+    btn.style.pointerEvents = 'none'
     let time = setInterval(() => {
         grow++;
         bar.style.width = grow + '%';
@@ -12,7 +13,6 @@ btn.addEventListener('click',()=>{
     setTimeout(() => {
         clearInterval(time);
         h1.innerHTML = "dowload complete";
-        btn.style.pointerEvents = 'none'
         btn.style.opacity = '0.5';
     }, 5000); 
 });
