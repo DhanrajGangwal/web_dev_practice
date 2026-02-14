@@ -7,6 +7,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  user-select: none;
 }
 
 main {
@@ -16,7 +18,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: gray;
-}
+} 
 
 .xylophone {
   height: 300px;
@@ -27,6 +29,7 @@ main {
   text-align: flex-end;
   gap: 10px;
   user-select: none;
+  cursor: pointer;
 }
 
 .xylo {
