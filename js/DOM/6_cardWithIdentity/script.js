@@ -48,5 +48,5 @@ users.forEach(function(elem){
 });
 
 var main = document.querySelector('main')
-
+main.style.fontFamily = "Helvetica"
 main.innerHTML = sum;
