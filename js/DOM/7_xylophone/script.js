@@ -80,48 +80,82 @@ document.addEventListener("keydown", function (dets) {
 
   if (dets.code === "Digit1") {
     s3.currentTime = 0;
-    s1.play();
+    s1.play(); k1.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k1.style.transform = "";
+    },120);
   }
   if (dets.code === "Digit2") {
     s2.currentTime = 0;
-    s2.play();
+    s2.play(); k2.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k2.style.transform = "";
+    },120);
   }
   if (dets.code === "Digit3") {
     s3.currentTime = 0;
     s3.play();
+    k3.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k3.style.transform = "";
+    },120);
   }
   if (dets.code === "Digit4") {
     s4.currentTime = 0;
-    s4.play();
+    s4.play(); k4.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k4.style.transform = "";
+    },120);
   }
   if (dets.code === "Digit5") {
     s5.currentTime = 0;
-    s5.play();
+    s5.play(); k5.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k5.style.transform = "";
+    },120);
   }
   if (dets.code === "Digit6") {
     s6.currentTime = 0;
-    s6.play();
+    s6.play(); k6.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k6.style.transform = "";
+    },120);
   }
   if (dets.code === "Digit7") {
     s7.currentTime = 0;
-    s7.play();
+    s7.play(); k7.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k7.style.transform = "";
+    },120);
   }
   if (dets.code === "Digit8") {
     s8.currentTime = 0;
-    s8.play();
+    s8.play(); k8.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k8.style.transform = "";
+    },120);
   }
   if (dets.code === "Digit9") {
     s9.currentTime = 0;
-    s9.play();
+    s9.play(); k9.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k9.style.transform = "";
+    },120);
   }
 
   if (dets.code === "Digit0") {
     s10.currentTime = 0;
-    s10.play();
+    s10.play(); k10.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k10.style.transform = "";
+    },120);
   }
 
   if (dets.code === "Minus") {
     s11.currentTime = 0;
-    s11.play();
+    s11.play(); k11.style.transform = 'scale(0.95)';
+    setTimeout(()=>{
+        k11.style.transform = "";
+    },120);
   }
 });
