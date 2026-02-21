@@ -207,7 +207,8 @@ allReels.addEventListener('click', function (dets) {
     } else {
       reels[dets.target.id].ismuted = false
     }
-    addData()
+    addData();
+    
   }
 
 })
